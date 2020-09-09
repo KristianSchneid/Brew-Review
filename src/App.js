@@ -10,9 +10,9 @@ function App() {
           className="App-link"
         >
           Brew Review Mate
-          <VisitorHome />
         </a>
       </header>
+      <VisitorHome />
     </div>
   );
 }
