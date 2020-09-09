@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
-import VisitorHome from "./components/Visitor Home.js"
+import { BrowserRouter as Router } from 'react-router-dom';
+import Navigation from './components/Navigation';
+//import VisitorHome from "./components/Visitor Home.js"
 
 function App() {
   return (
@@ -10,9 +12,11 @@ function App() {
           className="App-link"
         >
           Brew Review Mate
+          <Router>
+            <Navigation />
+          </Router>
         </a>
       </header>
-      <VisitorHome />
     </div>
   );
 }
